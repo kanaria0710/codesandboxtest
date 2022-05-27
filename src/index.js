@@ -161,3 +161,35 @@
 
 // arr8[0] = 100;
 // console.log(arr4); //スプレッド構文を使わないとarr8だけでなくarr4の配列も上書きしてしまう．arr4を参照してしまうため
+
+/**
+ * mapやfilterを使った配列の処理
+ */
+
+const nameArr = ["田中", "山田", "じゃけぇ"];
+
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(nameArr[index]);
+// }
+
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2)
+
+// nameArr.map((name) => {
+//   console.log(name);
+// });
+
+//filter
+const numArr = [1, 2, 3, 4, 5];
+const newNumArr = numArr.filter((num) => {
+  return num % 2 === 1;
+});
+
+console.log(newNumArr);
+
+//何番目の要素なのか意識する時
+for (let index = 0; index < nameArr.length; index++) {
+  console.log(`${index + 1}番目は${nameArr[index]}です。`);
+}
